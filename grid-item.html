@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid item</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: [cline1] 100px [cline2] auto [cline3] 100px [cline4];
+            grid-template-rows: [rline1] 50px [rline2] auto [rline3] 50px [rline4];
+        }
+
+        .header{
+            background-color: grey;
+            grid-column-start: cline2;
+            grid-column-end: cline4;
+            grid-row-start: rline1;
+            grid-row-end: rline2;
+            
+        }
+
+        .content{
+            background-color: bisque;
+            border: 2px solid rgb(203, 222, 174);
+            padding: 10px;
+            margin: 10px;
+            grid-column-start: cline2;
+            grid-column-end: cline3;
+            grid-row-start: rline2 ;
+            grid-row-end: rline3;
+        }
+
+        .footer{
+            background-color: grey;
+            grid-column-start: cline2;
+            grid-column-end: cline4;
+            grid-row-start: rline3 ;
+            grid-row-end: rline4;
+        }
+
+        .navbar{
+             background-color: grey;
+            grid-column-start: cline1;
+            grid-column-end: cline2;
+            grid-row-start: rline1;
+            grid-row-end: rline4;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            Selamat Datang di Website hakhan Faisal Rahmantoro
+        </div>
+
+        <div class="navbar">
+            <h3>Beranda</h3>
+            <h3>Alamat</h3>
+            <h3>Foto Profil</h3>
+        </div>
+        <div class="content">
+            <h1>Hakhan Faisal Rahmantoro</h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt tenetur obcaecati atque dolorem, non eveniet? Quo similique suscipit, excepturi magni soluta, eligendi ducimus ratione repellat quia, corporis doloribus eveniet at!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt tenetur obcaecati atque dolorem, non eveniet? Quo similique suscipit, excepturi magni soluta, eligendi ducimus ratione repellat quia, corporis doloribus eveniet at!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt tenetur obcaecati atque dolorem, non eveniet? Quo similique suscipit, excepturi magni soluta, eligendi ducimus ratione repellat quia, corporis doloribus eveniet at!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt tenetur obcaecati atque dolorem, non eveniet? Quo similique suscipit, excepturi magni soluta, eligendi ducimus ratione repellat quia, corporis doloribus eveniet at!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt tenetur obcaecati atque dolorem, non eveniet? Quo similique suscipit, excepturi magni soluta, eligendi ducimus ratione repellat quia, corporis doloribus eveniet at!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt tenetur obcaecati atque dolorem, non eveniet? Quo similique suscipit, excepturi magni soluta, eligendi ducimus ratione repellat quia, corporis doloribus eveniet at!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt tenetur obcaecati atque dolorem, non eveniet? Quo similique suscipit, excepturi magni soluta, eligendi ducimus ratione repellat quia, corporis doloribus eveniet at!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt tenetur obcaecati atque dolorem, non eveniet? Quo similique suscipit, excepturi magni soluta, eligendi ducimus ratione repellat quia, corporis doloribus eveniet at!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt tenetur obcaecati atque dolorem, non eveniet? Quo similique suscipit, excepturi magni soluta, eligendi ducimus ratione repellat quia, corporis doloribus eveniet at!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt tenetur obcaecati atque dolorem, non eveniet? Quo similique suscipit, excepturi magni soluta, eligendi ducimus ratione repellat quia, corporis doloribus eveniet at!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt tenetur obcaecati atque dolorem, non eveniet? Quo similique suscipit, excepturi magni soluta, eligendi ducimus ratione repellat quia, corporis doloribus eveniet at!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt tenetur obcaecati atque dolorem, non eveniet? Quo similique suscipit, excepturi magni soluta, eligendi ducimus ratione repellat quia, corporis doloribus eveniet at!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt tenetur obcaecati atque dolorem, non eveniet? Quo similique suscipit, excepturi magni soluta, eligendi ducimus ratione repellat quia, corporis doloribus eveniet at!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt tenetur obcaecati atque dolorem, non eveniet? Quo similique suscipit, excepturi magni soluta, eligendi ducimus ratione repellat quia, corporis doloribus eveniet at!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt tenetur obcaecati atque dolorem, non eveniet? Quo similique suscipit, excepturi magni soluta, eligendi ducimus ratione repellat quia, corporis doloribus eveniet at!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt tenetur obcaecati atque dolorem, non eveniet? Quo similique suscipit, excepturi magni soluta, eligendi ducimus ratione repellat quia, corporis doloribus eveniet at!
+            </p>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente aut a fugiat esse perspiciatis nam tenetur assumenda quae maiores, eum ipsum, odio, perferendis asperiores earum tempore unde modi quibusdam soluta.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident quidem nobis quas quia dolorem. Quod odit porro at dicta! Soluta quo doloremque aliquid officiis distinctio hic beatae dicta saepe nobis!
+            </p>
+        </div>
+        <div class="footer">
+            build with love by hakhan Faisal Rahmantoro
+        </div>
+    </div>
+</body>
+</html>
